@@ -1,0 +1,32 @@
+<html lang="en">
+	<head>
+		    <meta charset="UTF-8">
+		        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+			    <title>Vue Web Page</title>
+			        <link rel="stylesheet" href="mystyle.css">
+				    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	</head>
+	<body>
+		    <div class="sss">
+			        <h1 >This is directly from body section</h1>
+				    </div>
+				        <div id="app" >
+						        <p>{{ title }} - {{ Details }}  -  {{Years}}</p>
+							        <button v-on:click="Years++"> click to increase years</button>
+								        <button v-on:click="Years--"> click to decrease years</n></button>
+
+									        <div @click="changeTitle()" class="chgTxt">change Title</div>
+										    
+										        <!--<button @click="toggleShowDetails()">
+												        <span v-if="showDetails">Hide Details</span>
+													        <span v-else="hideDetails">Show Details</span>
+														    </button>-->
+														        <div v-show="showDetails">Details are Shown</div>
+															    </div>
+															        <script src="app.js">
+																	        
+																	    </script>
+
+	</body>
+</html>
+
